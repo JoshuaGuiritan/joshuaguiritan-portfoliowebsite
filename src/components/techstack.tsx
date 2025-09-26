@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function techstack({targetTechstack}: {targetTechstack: any}){
+export default function techstack({targetTechstack}: {targetTechstack: React.RefObject<HTMLDivElement | null>}){
     return(
         <div className="container py-3 d-flex justify-content-center align-items-center flex-column mb-5" ref={targetTechstack}>
           <div className="fs-3 fw-semibold">My Skills</div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function project({targetProjects}: {targetProjects: any}){
+export default function project({targetProjects}: {targetProjects: React.RefObject<HTMLDivElement | null>}){
     return(
         <>
             <div className="container py-5" ref={targetProjects}>

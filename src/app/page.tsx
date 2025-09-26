@@ -11,10 +11,10 @@ import Contact from "@/components/contact";
 export default function Home() {
   const [theme, setTheme] = useState<string>("dark");
 
-  const targetHero = useRef<any>(null);
-  const targetProjects = useRef<any>(null);
-  const targetTechstack = useRef<any>(null);
-  const targetMe = useRef<any>(null);
+  const targetHero = useRef<HTMLDivElement | null>(null);
+  const targetProjects = useRef<HTMLDivElement | null>(null);
+  const targetTechstack = useRef<HTMLDivElement | null>(null);
+  const targetMe = useRef<HTMLDivElement | null>(null);
 
   const toHero = () => {
     targetHero.current?.scrollIntoView({ behavior: "smooth" });

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function hero({theme, targetHero}: {theme: string, targetHero: any}){
+export default function hero({theme, targetHero}: {theme: string, targetHero: React.RefObject<HTMLDivElement | null>}){
     return(
         <div
           className={`${theme === "dark" ? "bd-masthead-dark" : "bd-masthead-light"} position-relative z-1 pt-0 overflow-x-hidden`} ref={targetHero}

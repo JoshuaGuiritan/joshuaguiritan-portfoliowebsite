@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function aboutme({targetMe}: {targetMe: any}){
+export default function aboutme({targetMe}: {targetMe: React.RefObject<HTMLDivElement | null> }){
     return(
         <>
             <div className="container" ref={targetMe}>
