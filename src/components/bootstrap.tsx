@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-export default function bootstrap({children}: {children: React.ReactNode}){
+export default function Bootstrap({children}: {children: React.ReactNode}){
     useEffect(() => {
         import("bootstrap/dist/js/bootstrap.bundle.min.js");
     }, [])
