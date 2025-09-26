@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function project({targetProjects}: {targetProjects: React.RefObject<HTMLDivElement | null>}){
+export default function Project({targetProjects}: {targetProjects: React.RefObject<HTMLDivElement | null>}){
     return(
         <>
             <div className="container py-5" ref={targetProjects}>
@@ -252,7 +252,7 @@ export default function project({targetProjects}: {targetProjects: React.RefObje
                 CityAid - Emergency Web-App
               </div>
               <div className="opacity-75 mt-1 pe-5">
-                It is a smart, location-based hospital directory built for my LITMIN project. With just a single button click, it detects the user's city, region, and country using GeoJS, then fetches local hospitals from OpenStreetMap using the Overpass API.
+                It is a smart, location-based hospital directory built for my LITMIN project. With just a single button click, it detects the user&apos;s city, region, and country using GeoJS, then fetches local hospitals from OpenStreetMap using the Overpass API.
               </div>
               <div className="mt-3 pe-lg-4">
                 <div
